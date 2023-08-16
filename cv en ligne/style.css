@@ -1,0 +1,153 @@
+body {
+    height: 700px;
+    background: linear-gradient(rgba(213, 156, 23, 0.712), rgba(56, 3, 5, 0.329));
+    }
+    @keyframes wheeeee {
+        0% {
+          left: 0;
+          bottom: 0;
+        }
+        
+        100% {
+          bottom: 100%;
+          left: 100%;
+        }
+      }
+      .main {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+      }
+      .wrapper {
+        margin:auto;
+        height: 750px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "header header header"
+        "aside contact skill"
+        "footer footer footer";
+    }
+
+       aside {
+        grid-area: aside;
+        max-width: 1400px;
+        margin-top: 5px;
+
+        background: rgba(144, 238, 144, 0.352);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        width: 30vw;
+        font-size: 18px;
+        line-height: 40px;
+        border-radius: 5%;
+        margin-left: 2px; 
+        padding: 10px;
+        color: white;
+        -webkit-border-radius: 5%;
+        -moz-border-radius: 5%;
+        -ms-border-radius: 5%;
+        -o-border-radius: 5%;
+         text-align: left;
+    }
+
+    .skill {
+        margin-left: 8px;
+        width: 30vw;
+        margin-top: 5px;
+        max-width: 800px;
+        text-align: left;
+        color: #512775;
+        padding-left: 30px;
+        background: rgba(255, 182, 193, 0.427);
+        grid-area: skill;
+        border-radius: 5%;
+        -webkit-border-radius: 5%;
+        -moz-border-radius: 5%;
+        -ms-border-radius: 5%;
+        -o-border-radius: 5%;
+}
+    
+    
+    header h1{
+        font-size: 35px;
+        text-align: center;
+        color: white;
+    }
+    header {
+        margin-top: 5px;
+        grid-area: header;
+        background-image: url(http://placeimg.com/640/480/nature);
+        background-size: cover;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        height: 400px;
+        color: white;
+    }
+    header h2 {
+        text-shadow: 5px 5px 12px rgba(242, 245, 249, 0.873);
+        font-size: 2.5rem;
+    }
+    img {
+        margin-top: 40px;
+        box-shadow: 0px 8px 11px 0px hsl(0, 0%, 70%);
+    }
+    .post {
+        margin-top: 1px;
+    }
+        
+    .star {
+        position: absolute;
+        color: white;
+        animation: 5s ease 0.1s infinite running wheeeee;
+        font-size: 3rem;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+}
+    .star1 {
+        position: absolute;
+        color: white;
+        animation: 5s ease 0.1s infinite running wheeeee;
+        font-size: 3rem;
+        transform: rotate(45deg);
+        -webkit-animation: 3s ease 0.2s infinite running wheeeee;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+    }
+    .contact {
+        background: rgba(249, 249, 136, 0.448);
+        margin-top: 20px;
+        grid-area: contact;
+        font-size: 25px;
+        text-align: center;
+        max-width: 700px;
+        border: 0.5px solid transparent;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+}
+    footer {
+        max-width: 2000px;
+        grid-area: footer;
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 15px;
+        text-align: center;
+        background: rgba(80, 11, 51, 0.568);
+        height: 29px;
+        padding-top: 18px;
+    
+    }
+
+
+
+
